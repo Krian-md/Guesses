@@ -1,6 +1,10 @@
+using GuessesApi.Database;
+using GuessesApi.Database.Interfaces;
+using GuessesApi.Database.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,12 +29,19 @@ namespace GuessesApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
+            services.AddCors();
+            services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GuessesApi", Version = "v1" });
             });
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContextPool<DataContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            });
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +54,11 @@ namespace GuessesApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GuessesApi v1"));
             }
 
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin();
+                 builder.AllowAnyHeader();
+            });
             app.UseRouting();
 
             app.UseAuthorization();

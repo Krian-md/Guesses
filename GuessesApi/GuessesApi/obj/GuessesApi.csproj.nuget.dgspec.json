@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marko\\OneDrive\\Рабочий стол\\Жопа\\GuessesApi\\GuessesApi\\GuessesApi.csproj": {}
+    "E:\\Guesses\\GuessesApi\\GuessesApi\\GuessesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marko\\OneDrive\\Рабочий стол\\Жопа\\GuessesApi\\GuessesApi\\GuessesApi.csproj": {
+    "E:\\Guesses\\GuessesApi\\GuessesApi\\GuessesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marko\\OneDrive\\Рабочий стол\\Жопа\\GuessesApi\\GuessesApi\\GuessesApi.csproj",
+        "projectUniqueName": "E:\\Guesses\\GuessesApi\\GuessesApi\\GuessesApi.csproj",
         "projectName": "GuessesApi",
-        "projectPath": "C:\\Users\\marko\\OneDrive\\Рабочий стол\\Жопа\\GuessesApi\\GuessesApi\\GuessesApi.csproj",
+        "projectPath": "E:\\Guesses\\GuessesApi\\GuessesApi\\GuessesApi.csproj",
         "packagesPath": "C:\\Users\\marko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marko\\OneDrive\\Рабочий стол\\Жопа\\GuessesApi\\GuessesApi\\obj\\",
+        "outputPath": "E:\\Guesses\\GuessesApi\\GuessesApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

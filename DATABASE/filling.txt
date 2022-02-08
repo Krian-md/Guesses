@@ -1,0 +1,43 @@
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Home' , 'Дом', 'E:\Guesses\image\home.jfif', '[həʊm]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Family' , 'Семья', 'E:\Guesses\image\family.jfif', '[ˈfæməli]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Apartment' , 'Квартира', 'E:\Guesses\image\apartment.jfif', '[əˈpɑːrtmənt]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Friends' , 'Друзья', 'E:\Guesses\image\friends.jpeg', '[frend]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Study' , 'Учиться', 'E:\Guesses\image\study.jpg', '[ˈstʌdi]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Achievement' , 'Достижение', 'E:\Guesses\image\achievement.jpg', '[əˈtʃiːvmənt]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Phone' , 'Телефон', 'E:\Guesses\image\phone.png', '[foʊn]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Tree' , 'Дерево', 'E:\Guesses\image\tree.jpg', '[triː]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Incognito' , 'Инкогнито', 'E:\Guesses\image\incognito.png', '[-kɑːɡˈniː.t̬oʊ]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Road' , 'Дорога', 'E:\Guesses\image\road.jfif', '[roʊd]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Lightning' , 'Молния', 'E:\Guesses\image\lightning.jpg', '[ˈlaɪt.nɪŋ]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Bed' , 'Кровать', 'E:\Guesses\image\bed.jfif', '[bed]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Pen' , 'Ручка', 'E:\Guesses\image\pen.jpg', '[pen]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Book' , 'Книга', 'E:\Guesses\image\book.jpg', '[bʊk]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Shop' , 'Магазин', 'E:\Guesses\image\shop.png', '[ʃɑːp]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Notebook' , 'Ноутбук', 'E:\Guesses\image\notebook.jpg', '[ˈnoʊt-]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Paper' , 'Бумага', 'E:\Guesses\image\paper.png', '[ˈpeɪpər]');
+INSERT INTO Cards (WordEn, WordRu, [Url], Transcript)  VALUES ('Box' , 'Коробка', 'E:\Guesses\image\box.jpeg', '[bɑːks]');
+go
+
+
+
+
+
+
+
+INSERT INTO Dictionary VALUES (1, 1, 0, 'DictOne');
+INSERT INTO Dictionary VALUES (6, 1, 0, 'DictOne');
+INSERT INTO Dictionary VALUES (3, 1, 0, 'DictOne');
+INSERT INTO Dictionary VALUES (16, 1, 0, 'DictOne');
+INSERT INTO Dictionary VALUES (2, 2, 0, 'DictMi');
+INSERT INTO Dictionary VALUES (7, 2, 0, 'DictMi');
+INSERT INTO Dictionary VALUES (4, 2, 0, 'DictMi');
+INSERT INTO Dictionary VALUES (16, 2, 0, 'DictMi');
+INSERT INTO Dictionary VALUES (10, 3, 0, 'Pfizer');
+INSERT INTO Dictionary VALUES (4, 3, 0, 'Pfizer');
+INSERT INTO Dictionary VALUES (8, 3, 0, 'Pfizer');
+INSERT INTO Dictionary VALUES (18, 3, 0, 'Pfizer');
+go
+
+
+SELECT * FROM Dictionary
+go
